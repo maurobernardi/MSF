@@ -1,23 +1,19 @@
 ---
 title: "Bayesian Inference via Markov Chain Monte Carlo (MCMC)"
-author: "Charles J. Geyer"
+author: "Mauro Bernardi"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
-  html_document:
-    number_sections: true
-    mathjax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  pdf_document:
+  rmarkdown::github_document:
     number_sections: true
 ---
+
+
 
 # License
 
 This work is licensed under a Creative Commons
 Attribution-ShareAlike 4.0 International License
 (http://creativecommons.org/licenses/by-sa/4.0/).
-
-The R markdown source for this document is
-https://www.stat.umn.edu/geyer/3701/notes/mcmc-bayes.Rmd.
 
 # R
 
@@ -283,7 +279,7 @@ If $X$ and $Y$ are discrete random variables and $S$ is their sample space,
 the set of all possible $(x, y)$ pairs, then their PMF must be a bivariate
 function $f$ that is nonnegative and sums to one
 $$
-   \sum_{(x, y) \in S} f(x, y) = 1.
+\sum_{(x, y) \in S} f(x, y) = 1.
 $$
 
 The PMF gives probabilities of outcomes: $f(x, y)$ is the probability
